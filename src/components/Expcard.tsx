@@ -1,33 +1,36 @@
 import Image from "next/image";
 
-interface Image {
+interface ImageProps {
   src: string;
   alt: string;
-  head:string
+  head: string;
 }
 
-function Card({src , alt ,head}:Image){
-    return(
-        <>
-        <div className="logos shadow-lg shadow-black flex xs:flex-col md:flex-row xs:mx-7 xs:mt-12 text-slate-300 justify-center relative bg-slate-800 rounded-lg overflow-hidden items-center mt-20 ml-80 mr-80">
-          <div className="  w-1/5 absolute top-5 left-5">
-            <Image className="" width={500} height={400}  src={src} alt={alt} />
-          </div>
-          <div className="  w-3/5 pl-8">
-            <h1 className="text-2xl font-semibold">{head}</h1>
-            <ul className=" list-disc ml-6 leading-10">
-              <li>Lorem, ipsum dolor.</li>
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-              <li>Lorem, ipsum dolor.</li>
-            </ul>
-          </div>
-          <div className=" w-1/5 absolute top-3 right-2 text-center">
-            Nov 2021 - Present
-          </div>
-        </div>
-        </>
-    )
+function Card({ src, alt, head }: ImageProps) {
+  return (
+    <div className="shadow-lg shadow-black flex flex-col md:flex-row text-slate-300 justify-center relative bg-slate-800 rounded-lg overflow-hidden items-center mt-12 mx-4 md:mx-20 p-5 md:p-8">
+      {/* Image Section */}
+      <div className="w-1/5 absolute top-5 left-5 md:static md:w-1/4 flex justify-center items-center">
+        <Image className="object-contain" width={100} height={100} src={src} alt={alt} />
+      </div>
+
+      {/* Text Section */}
+      <div className="w-full md:w-3/5 pl-0 md:pl-8 mt-14 md:mt-0">
+        <h1 className="text-xl md:text-2xl xs:mt-7 font-semibold text-center md:text-left">{head}</h1>
+        <ul className="list-disc ml-6 leading-8 mt-4">
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+          <li>Lorem, ipsum dolor.</li>
+        </ul>
+      </div>
+
+      {/* Date Section */}
+      <div className="w-full md:w-1/5 absolute bottom-5 md:static top-3 right-2 text-center">
+        Nov 2021 - Present
+      </div>
+    </div>
+  );
 }
 
-export default Card
+export default Card;
