@@ -1,101 +1,62 @@
-import Image from "next/image";
+"use client";
+import Navbar from "@/components/Navbar";
+import Heading from "@/components/Heading";
+import Skills from "@/components/Skills";
+import Card from "@/components/Expcard";
+import Projectcard from "@/components/project";
+import Testimonials from "@/components/Testimonials";
+import Contactme from "@/components/Contact";
+import Footer from "@/components/footer";
+import About from "@/components/About";
+import Intro from "@/components/Intro";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      <Navbar />
+      <section className="hero text-white flex xs:w-[768px] md:w-full md:px-20 md:py-24 xs:px-0 xs:py-[60px] py-24 px-20">
+        <Intro />
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <section className="hero2 md:w-full xs:w-[768px] xs:px-0 xs:py-[60px] bg-slate-900 pt-14 text-white ">
+        <Heading showParagraph={false}  heading="ABOUT ME" />
+        <About/>
+      </section>
+
+      <section className="hero3 md:w-full xs:w-[768px] xs:py-[60px] xs:px-0 pt-14 text-white ">
+        <Heading heading="SKILLS" />
+        <Skills />
+      </section>
+
+      <section className="hero4 md:w-full xs:w-[768px] xs:py-[60px] xs:px-0 pt-14 pb-20 bg-slate-900">
+        <Heading heading="EXPERIENCE" headline="Here is a quick summary of my most recent experiences:"/>
+        <Card src="/images/upwork-icon.png" alt={"upwork"} head="Jr. Frontend developer" />
+        <Card src="/images/fiverr-icon.png" alt={"fiverr"} head="Jr. Frontend developer" />
+        <Card src="/images/freelancer-icon.png" alt={"freelancer"} head="Jr. Frontend developer" />
+      </section>
+
+      <section className="hero5 xs:w-[768px] xs:py-[60px] xs:px-0 pt-14">
+        <Heading heading="WORK" headline="Some of the noteworthy projects i have built:"/>
+        <Projectcard src="/images/resume.png" alt={"resume"} />
+        <Projectcard src="/images/Game.png" alt={"game"} />
+        <Projectcard src="/images/tictactoe.png" alt={"game2"}/>
+      </section>
+
+      <section className="hero6  xs:w-[768px] xs:py-[60px] xs:px-0 bg-slate-900 pt-14 pb-14">
+        <Heading heading="TESTIMONIALS" headline="Nice things people have said about me:" />
+        <div className="peoples gap-10 p-10 xs:flex-col xs:m-0 flex justify-center items-center ml-10 mr-10">
+          <Testimonials />
+          <Testimonials />
+          <Testimonials />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      <section className="hero7 xs:w-[768px] xs:py-[60px] xs:px-14 pt-14 pb-14 bg-slate-950">
+        <Heading heading="GET IN TOUCH" headline="What's next? Feel free to reach out to me if you are loooking for a developer, have a query, or simlpy want to connect" />
+        <Contactme />
+      </section>
+
+      <Footer />
     </div>
   );
 }
