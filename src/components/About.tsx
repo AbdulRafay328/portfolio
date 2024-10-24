@@ -1,9 +1,25 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 function About() {
+  const leftVarient = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.7 } },
+  };
+
+  const rightVarient = {
+    hidden: { opacity: 0, x:100 },
+    visible: { opacity: 1, x:0, transition: { duration: 0.7 } },
+  };
+
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center px-4 md:px-20 mt-10">
-      <div className="h-96 md:w-1/2 flex justify-center items-center">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      className="flex flex-col md:flex-row justify-center items-center px-4 md:px-20 mt-10"
+    >
+      <motion.div variants={leftVarient} className="h-96 md:w-1/2 flex justify-center items-center">
         <Image
           className="rounded-xl shadow-2xl shadow-gray-700 object-cover"
           width={220}
@@ -11,17 +27,29 @@ function About() {
           src="/images/Aboutme.png"
           alt="About Me"
         />
-      </div>
-      <div className="md:w-1/2 xs:pt-5 xs:px-4 space-y-8">
-        <div className="font-medium text-xl">Curious about me? Here you have it:</div>
-        <div>
-          I&apos;m a passionate self-proclaimed designer who specializes in full stack development with React.js & Node.js. I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel-perfect design, and writing clear, readable, highly performant code matter to me.
+      </motion.div>
+      <motion.div variants={rightVarient} className="md:w-1/2 xs:pt-5 xs:px-4 space-y-8">
+        <div className="font-medium text-xl">
+          Curious about me? Here you have it:
         </div>
         <div>
-          I began my journey as a web developer in 2015, and since then, I&apos;ve continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I&apos;m building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nest.js, Tailwind CSS, Supabase, and much more.
+          I&apos;m a passionate self-proclaimed designer who specializes in full
+          stack development with React.js & Node.js. I am very enthusiastic
+          about bringing the technical and visual aspects of digital products to
+          life. User experience, pixel-perfect design, and writing clear,
+          readable, highly performant code matter to me.
         </div>
-      </div>
-    </div>
+        <div>
+          I began my journey as a web developer in 2015, and since then,
+          I&apos;ve continued to grow and evolve as a developer, taking on new
+          challenges and learning the latest technologies along the way. Now, in
+          my early thirties, 7 years after starting my web development journey,
+          I&apos;m building cutting-edge web applications using modern
+          technologies such as Next.js, TypeScript, Nest.js, Tailwind CSS,
+          Supabase, and much more.
+        </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

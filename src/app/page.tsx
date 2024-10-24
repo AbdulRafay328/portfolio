@@ -3,11 +3,11 @@ import Navbar from "@/components/Navbar";
 import Heading from "@/components/Heading";
 import Skills from "@/components/Skills";
 import Card from "@/components/Expcard";
-import Projectcard from "@/components/project";
-import Testimonials from "@/components/Testimonials";
-import Contactme from "@/components/Contact";
 import Footer from "@/components/footer";
 import About from "@/components/About";
+import Testimonials from "@/components/Testimonials";
+import Contactme from "@/components/Contact";
+import Projectcard from "@/components/project";
 import Intro from "@/components/Intro";
 
 export default function Home() {
@@ -40,9 +40,9 @@ export default function Home() {
       <section className="hero5 px-4 md:px-20 xs:py-16 py-12">
         <Heading heading="WORK" headline="Some of the noteworthy projects I have built:" />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-none md:grid-flow-row gap-4">
-          <Projectcard src="/images/resume.png" alt={"resume"} />
-          <Projectcard src="/images/Game.png" alt={"game"} />
-          <Projectcard src="/images/tictactoe.png" alt={"game2"} />
+          <Projectcard src="/images/resume.png" alt={"resume"} address="https://vercel.com/api/toolbar/link/hackathon-4-tau.vercel.app?via=team-dashboard-project-entity&p=1&page=/" />
+          <Projectcard src="/images/Game.png" alt={"game"} address="https://vercel.com/api/toolbar/link/number-guessing-game-olive.vercel.app?via=team-dashboard-project-entity&p=1&page=/" />
+          <Projectcard src="/images/tictactoe.png" alt={"game2"} address="https://vercel.com/api/toolbar/link/tic-tac-toe-theta-dusky.vercel.app?via=team-dashboard-project-entity&p=1&page=/" />
         </div>
       </section>
 
