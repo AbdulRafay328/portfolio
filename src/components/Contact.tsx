@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Contactme() {
   return (
@@ -13,13 +14,16 @@ function Contactme() {
         You may also find me on these platforms
       </div>
       <div className="flex justify-center gap-5 mt-10">
-        <Image
-          className="invert h-8 w-8 md:h-10 md:w-10"
-          src="/images/github-icon.png"
-          alt="GitHub Icon"
-          width={40}
-          height={40}
-        />
+        <Link href="https://github.com/AbdulRafay328">
+          <Image
+            className="invert h-8 w-8 md:h-10 md:w-10"
+            src="/images/github-icon.png"
+            alt="GitHub Icon"
+            width={40}
+            height={40}
+          />
+        </Link>
+        <Link href="https://www.linkedin.com/in/abdul-rafay-979143308/">
         <Image
           className="invert h-8 w-8 md:h-10 md:w-10"
           src="/images/linkedin-square-icon.png"
@@ -27,6 +31,8 @@ function Contactme() {
           width={40}
           height={40}
         />
+        </Link>
+        <Link href="https://github.com/AbdulRafay328">
         <Image
           className="invert h-8 w-8 md:h-10 md:w-10"
           src="/images/github-icon.png"
@@ -34,10 +40,10 @@ function Contactme() {
           width={40}
           height={40}
         />
+        </Link>
       </div>
     </div>
   );
 }
 
 export default Contactme;
-
