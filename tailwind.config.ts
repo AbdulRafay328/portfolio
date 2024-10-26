@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      scrollBehavior:['responsive', 'smooth'],
       screens: {
         'xs': '300px',    
         '3xl': '1600px',

@@ -8,8 +8,8 @@ function About() {
   };
 
   const rightVarient = {
-    hidden: { opacity: 0, x:100 },
-    visible: { opacity: 1, x:0, transition: { duration: 0.7 } },
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.7 } },
   };
 
   return (
@@ -19,22 +19,28 @@ function About() {
       viewport={{ once: true, amount: 0.2 }}
       className="flex flex-col md:flex-row justify-center items-center px-4 md:px-20 mt-10"
     >
-      <motion.div variants={leftVarient} className="h-96 md:w-1/2 flex justify-center items-center">
+      <motion.div
+        variants={leftVarient}
+        className="h-96 md:w-1/2 flex justify-center items-center"
+      >
         <Image
           className="rounded-xl shadow-2xl shadow-gray-700 object-cover"
           width={220}
-          height={300} // Adjusted height for better aspect ratio
+          height={300}
           src="/images/Aboutme.png"
           alt="About Me"
         />
       </motion.div>
-      <motion.div variants={rightVarient} className="md:w-1/2 xs:pt-5 xs:px-4 space-y-8">
+      <motion.div
+        variants={rightVarient}
+        className="md:w-1/2 xs:pt-5 xs:px-4 space-y-8"
+      >
         <div className="font-medium text-xl">
           Curious about me? Here you have it:
         </div>
         <div>
-          I&apos;m a passionate self-proclaimed developer who specializes in frontend 
-          development with Next.js & Node.js. I am very enthusiastic
+          I&apos;m a passionate self-proclaimed developer who specializes in
+          frontend development with Next.js & Node.js. I am very enthusiastic
           about bringing the technical and visual aspects of digital products to
           life. User experience, pixel-perfect design, and writing clear,
           readable, highly performant code matter to me.

@@ -24,22 +24,22 @@ function Contactme() {
           />
         </Link>
         <Link href="https://www.linkedin.com/in/abdul-rafay-979143308/">
-        <Image
-          className="invert h-8 w-8 md:h-10 md:w-10"
-          src="/images/linkedin-square-icon.png"
-          alt="LinkedIn Icon"
-          width={40}
-          height={40}
-        />
+          <Image
+            className="invert h-8 w-8 md:h-10 md:w-10"
+            src="/images/linkedin-square-icon.png"
+            alt="LinkedIn Icon"
+            width={40}
+            height={40}
+          />
         </Link>
         <Link href="https://github.com/AbdulRafay328">
-        <Image
-          className="invert h-8 w-8 md:h-10 md:w-10"
-          src="/images/github-icon.png"
-          alt="GitHub Icon"
-          width={40}
-          height={40}
-        />
+          <Image
+            className="invert h-8 w-8 md:h-10 md:w-10"
+            src="/images/github-icon.png"
+            alt="GitHub Icon"
+            width={40}
+            height={40}
+          />
         </Link>
       </div>
     </div>

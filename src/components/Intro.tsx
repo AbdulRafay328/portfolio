@@ -24,7 +24,6 @@ function Intro() {
         variants={leftVarient}
         className="left space-y-8 md:space-y-12"
       >
-        {/* Heading Section */}
         <div className="space-y-4">
           <h1 className="text-4xl md:text-6xl font-semibold md:font-bold">
             Hi I&apos;m Rafay
@@ -38,7 +37,6 @@ function Intro() {
           </p>
         </div>
 
-        {/* Location & Availability */}
         <div className="space-y-4 leading-10">
           <div className="flex items-center gap-2 text-base md:text-lg">
             <Image
@@ -57,7 +55,6 @@ function Intro() {
         </div>
       </motion.div>
 
-      {/* Profile Image */}
       <motion.div
         variants={rightVarient}
         className="right w-full md:w-5/12 flex justify-center"

@@ -15,10 +15,18 @@ function Navbar() {
 
         <div className="hidden md:flex">
           <ul className="flex gap-6 md:gap-10 items-center text-sm md:text-base">
-            <li className="cursor-pointer">About</li>
-            <li className="cursor-pointer">Work</li>
-            <li className="cursor-pointer">Testimonials</li>
-            <li className="cursor-pointer">Contact me</li>
+            <a href="#ABOUT">
+              <li className="smooth-scroll cursor-pointer">About</li>
+            </a>
+            <a href="#WORK">
+              <li className="smooth-scroll cursor-pointer">Work</li>
+            </a>
+            <a href="#TESTIMONIALS">
+              <li className="scroll-smooth cursor-pointer">Testimonials</li>
+            </a>
+            <a href="#CONTACT">
+              <li className="cursor-pointer">Contact me</li>
+            </a>
           </ul>
         </div>
 

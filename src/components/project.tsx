@@ -10,7 +10,6 @@ interface ImageProps {
 }
 
 function Projectcard({ src, alt, address, heading }: ImageProps) {
-  // Framer Motion variants for left and right animations
   const leftVariant = {
     hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
@@ -28,7 +27,6 @@ function Projectcard({ src, alt, address, heading }: ImageProps) {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
-      {/* Image Section (Sliding in from the left) */}
       <motion.div
         className="p-2 flex items-center justify-center xs:w-full md:w-1/2"
         variants={leftVariant}
@@ -42,7 +40,6 @@ function Projectcard({ src, alt, address, heading }: ImageProps) {
         />
       </motion.div>
 
-      {/* Text and Skills Section (Sliding in from the right) */}
       <motion.div
         className="bg-slate-700 xs:w-full md:w-1/2 p-6 md:p-8"
         variants={rightVariant}
@@ -53,7 +50,6 @@ function Projectcard({ src, alt, address, heading }: ImageProps) {
           assumenda ipsum, harum exercitationem architecto hic.
         </p>
 
-        {/* Skills */}
         <div className="skill flex flex-wrap mt-8 gap-3">
           <div className="bg-slate-900 text-xs md:text-sm text-center text-white rounded-xl px-3 py-1">
             React
@@ -78,14 +74,13 @@ function Projectcard({ src, alt, address, heading }: ImageProps) {
         {/* Link Icon */}
         <div className="flex justify-start mt-10">
           <Link href={address}>
-          <Image
-            
-            className="h-5 invert w-5"
-            src="/images/link.png"
-            alt="link"
-            width={20}
-            height={20}
-          />
+            <Image
+              className="h-5 invert w-5"
+              src="/images/link.png"
+              alt="link"
+              width={20}
+              height={20}
+            />
           </Link>
         </div>
       </motion.div>
