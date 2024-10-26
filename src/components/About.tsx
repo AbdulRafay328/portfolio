@@ -33,20 +33,20 @@ function About() {
           Curious about me? Here you have it:
         </div>
         <div>
-          I&apos;m a passionate self-proclaimed designer who specializes in full
-          stack development with React.js & Node.js. I am very enthusiastic
+          I&apos;m a passionate self-proclaimed developer who specializes in frontend 
+          development with Next.js & Node.js. I am very enthusiastic
           about bringing the technical and visual aspects of digital products to
           life. User experience, pixel-perfect design, and writing clear,
           readable, highly performant code matter to me.
         </div>
         <div>
-          I began my journey as a web developer in 2015, and since then,
+          I began my journey as a web developer in 2022, and since then,
           I&apos;ve continued to grow and evolve as a developer, taking on new
           challenges and learning the latest technologies along the way. Now, in
-          my early thirties, 7 years after starting my web development journey,
+          my early twenties, 2 years after starting my web development journey,
           I&apos;m building cutting-edge web applications using modern
-          technologies such as Next.js, TypeScript, Nest.js, Tailwind CSS,
-          Supabase, and much more.
+          technologies such as Next.js, TypeScript, Node.js, Tailwind CSS,
+          figma, and much more.
         </div>
       </motion.div>
     </motion.div>

@@ -40,9 +40,9 @@ export default function Home() {
       <section className="hero5 px-4 md:px-20 xs:py-16 py-12">
         <Heading heading="WORK" headline="Some of the noteworthy projects I have built:" />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-none md:grid-flow-row gap-4">
-          <Projectcard src="/images/resume.png" alt={"resume"} address="https://vercel.com/api/toolbar/link/hackathon-4-tau.vercel.app?via=team-dashboard-project-entity&p=1&page=/" />
-          <Projectcard src="/images/Game.png" alt={"game"} address="https://vercel.com/api/toolbar/link/number-guessing-game-olive.vercel.app?via=team-dashboard-project-entity&p=1&page=/" />
-          <Projectcard src="/images/tictactoe.png" alt={"game2"} address="https://vercel.com/api/toolbar/link/tic-tac-toe-theta-dusky.vercel.app?via=team-dashboard-project-entity&p=1&page=/" />
+          <Projectcard src="/images/resume.png" heading="RESUME BUILDER" alt={"resume"} address="https://vercel.com/api/toolbar/link/hackathon-4-tau.vercel.app?via=team-dashboard-project-entity&p=1&page=/" />
+          <Projectcard src="/images/Game.png" heading="NUMBER GUESSING" alt={"game"} address="https://vercel.com/api/toolbar/link/number-guessing-game-olive.vercel.app?via=team-dashboard-project-entity&p=1&page=/" />
+          <Projectcard src="/images/tictactoe.png" heading="TICTACTOE" alt={"game2"} address="https://vercel.com/api/toolbar/link/tic-tac-toe-theta-dusky.vercel.app?via=team-dashboard-project-entity&p=1&page=/" />
         </div>
       </section>
 

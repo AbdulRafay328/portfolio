@@ -6,9 +6,10 @@ interface ImageProps {
   src: string;
   alt: string;
   address: string;
+  heading: string;
 }
 
-function Projectcard({ src, alt, address }: ImageProps) {
+function Projectcard({ src, alt, address, heading }: ImageProps) {
   // Framer Motion variants for left and right animations
   const leftVariant = {
     hidden: { opacity: 0, x: -100 },
@@ -46,7 +47,7 @@ function Projectcard({ src, alt, address }: ImageProps) {
         className="bg-slate-700 xs:w-full md:w-1/2 p-6 md:p-8"
         variants={rightVariant}
       >
-        <h1 className="text-xl font-bold">Fiskill</h1>
+        <h1 className="text-xl font-bold">{heading}</h1>
         <p className="mt-5">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
           assumenda ipsum, harum exercitationem architecto hic.
