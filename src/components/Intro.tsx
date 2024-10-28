@@ -26,7 +26,7 @@ function Intro() {
       >
         <div className="space-y-4">
           <h1 className="text-4xl md:text-6xl font-semibold md:font-bold">
-            Hi I&apos;m Rafay
+            Hi I&apos;m Rafay👋
           </h1>
           <p className="text-base md:text-lg md:pt-6 leading-relaxed">
             I&apos;m a frontend developer with a focus on creating and
