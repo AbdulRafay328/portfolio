@@ -60,10 +60,10 @@ function Intro() {
         className="right w-full md:w-5/12 flex justify-center"
       >
         <Image
-          className="rounded-xl md:hidden mds:block mds:p-0 mds:gap-1 object-cover shadow-2xl shadow-gray-700"
+          className="rounded-xl md:hidden mds:block mds:p-0 mds:gap-1 xs:w-[200px] lg:w-[300px] object-cover shadow-2xl shadow-gray-700"
           width={300}
           height={300}
-          src="/images/Profile.png"
+          src="/images/profile.jpeg"w-
           alt="profile image"
         />
       </motion.div>

@@ -74,6 +74,12 @@ export default function Home() {
             address="https://vercel.com/api/toolbar/link/number-guessing-game-olive.vercel.app?via=team-dashboard-project-entity&p=1&page=/"
           />
           <Projectcard
+            src="/images/Edu-web.png"
+            heading="EDU WEB"
+            alt={"Website"}
+            address="https://edu-web-virid.vercel.app/"
+          />
+          <Projectcard
             src="/images/tictactoe.png"
             heading="TICTACTOE"
             alt={"game2"}
